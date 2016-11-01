@@ -1,0 +1,19 @@
+@mixin each($num, $type: false) {
+  @if $type == true {
+    &:nth-of-type(#{$num}n){
+      @content;
+    }
+  }
+  @else {
+    &:nth-child(#{$num}n){
+      @content;
+    }
+  }
+}
+
+.box-card{
+  @include each(5) {
+    width:98%;
+  }
+
+}
