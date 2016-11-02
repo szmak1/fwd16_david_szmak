@@ -22,7 +22,7 @@ gulp.task('browserSync', function() {
   browserSync({
     server: {
       baseDir: 'app',
-      index: 'landningstyle.html'
+      index: 'landingpage.html'
     }
   })
 })

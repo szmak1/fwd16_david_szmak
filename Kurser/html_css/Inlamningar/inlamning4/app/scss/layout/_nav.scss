@@ -63,13 +63,18 @@ a {
 	}
 }
 
+.flex-nav a:hover {
+  color: $blue;
+  background: seagreen;
+}
 
 
 
+ 
 
 
-@include respond-to('medium') {
-  .flex-nav li {
+ @include respond-to('small') {
+    .flex-nav li {
     flex: 1 1 50%;
   }
   /* menu # */
@@ -88,7 +93,13 @@ a {
   display: none;
 }
 
+%flex-nav {
+  color: $blue;
+}
 
+.flex-nav {
+  @extend %flex-nav;
+}
 
 
 .sub1 > ul {
@@ -144,12 +155,22 @@ a {
 }
 
 .flex-nav a:hover {
-  color: seagreen;
+  color: $blue;
   background:rgba(0,0,0,0.2);
 }
 }
- @include respond-to('large') {
 
+
+ @include respond-to('large') {
+  
+
+%flex-nav {
+  background:$black_20;
+}
+
+.flex-nav {
+  @extend %flex-nav;
+}
 
 .sub1 > ul {
   display:none;

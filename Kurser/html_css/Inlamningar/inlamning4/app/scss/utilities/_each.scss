@@ -1,0 +1,19 @@
+$cardcolors: (
+1: #dbc3d0,
+2: #5e0231,
+3: #c7a693,
+4: #856046,
+5: #e6af4b,
+6: #e05038,
+7: #f2cbbc,
+8: #334431,
+9: #c43235,
+10: #300032
+
+);
+
+@each $i, $txtcolor in $cardcolors {
+    .card:nth-of-type(#{$i}) {
+        background-color: invert($txtcolor);
+    }
+}
