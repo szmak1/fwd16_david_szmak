@@ -1,0 +1,76 @@
+%box-card-wrap {
+max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: $white;
+
+}
+
+%box-card-title {
+    display:none;
+	font-size: 120%;
+	font-weight: 700;
+}
+
+%box-card-meta {
+    
+	display: none;
+}
+
+%box-card-category {
+    display:none;
+	flex: 1;
+}
+
+%box-card-author {
+	flex: 1;
+	text-align: right;
+}
+
+%box-card-bottom {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+%box-card-img {
+	margin: 20px 0;
+	align-self: center;
+	width: 100%;
+	height: auto;
+}
+
+%box-card-button {
+    display:none;
+	background: $white;
+	color: $blue;
+	border: none;
+	margin-top: auto;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.box-card {
+  position: relative;
+	
+  
+  
+  
+	
+	@for $i from 1 through 50 {
+	  $bg-color: darken($blue, $i);
+  	&:nth-child(#{$i}) {
+  		background: $bg-color;
+  		
+			&::before {
+          content: '#{$bg-color}';
+          position: absolute;
+          color: $cyan;
+       }
+  		
+  	}
+  }
+}
