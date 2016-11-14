@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:bold,extrabold);
+
+
+
+
+
+/// breakpoints
+$breakpoints: (
+  'small': ( min-width:  31.000em ),
+  'medium': ( min-width:  37.000em ),
+  'large':  ( min-width: 62.000em ),
+) !default;
+
+
+
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+/// COLORMAPS för färger ***********
+$colors: (
+black_20: rgba(0,0,0,0.2),
+nocolor: rgba(0,0,0,0.0),
+sea_green: seagreen,
+black_60: rgba(0,0,0,0.6),
+white: white,
+black_30: rgba(0, 0, 0, 0.3),
+gold: gold,
+cyan: cyan,
+menub: dodgerblue,
+black: black
+) !default;
+

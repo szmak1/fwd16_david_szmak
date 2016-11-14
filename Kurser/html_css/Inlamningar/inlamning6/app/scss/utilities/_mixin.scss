@@ -1,0 +1,45 @@
+/// Mixin - en flexcard stor
+
+@mixin each($num, $type: false) {
+  @if $type == true {
+    &:nth-of-type(#{$num}){
+      @content;
+    }
+  }
+  @else {
+    &:nth-child(#{$num}){
+      @content;
+    }
+  }
+}
+
+/// Mixin - en flexcard
+.box-card {
+  @include each(1) {
+     flex:60%;
+    
+
+     margin: 0 0 30px 0;
+     
+
+    
+      img {
+      object-fit:cover;
+      width:90%;
+      height:150px;
+    
+    }
+    
+  
+  }
+
+
+}
+
+
+
+
+
+
+
+

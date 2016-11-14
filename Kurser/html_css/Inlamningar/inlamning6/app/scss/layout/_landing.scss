@@ -1,0 +1,54 @@
+.landingcontainer{
+display: flex;
+margin-top:0;
+align-items: center;
+justify-content: center;
+text-align:center;
+
+height: 100%;
+
+a{
+    margin-top: 0;
+  text-decoration: none;
+
+  
+
+  &:hover{
+
+      
+  }
+}
+
+.smiley{
+    color: map-get($colors, dodgerblue);
+    font-size: 40px;
+
+}
+
+#p1, #p2, #p3{
+color: map-get($colors, white);
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+
+
+
+}
+
+#p1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: map-get($colors, dodgerblue);
+}
+
+#p2{
+    font-size: 1.5em;
+}
+
+#p3{
+    font-size: 2em;
+    
+    color: map-get($colors, dodgerblue);
+}
+}
+
+

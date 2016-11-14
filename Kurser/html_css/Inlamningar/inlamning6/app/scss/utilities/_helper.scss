@@ -1,0 +1,106 @@
+///placeholder card wrap
+
+%box-card-wrap {
+max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: map-get($colors, white);
+
+}
+///placeholder card title
+%box-card-title {
+    display:none;
+	font-size: 120%;
+	font-weight: 700;
+}
+///placeholder card meta
+%box-card-meta {
+	display: none;
+}
+///placeholder
+%box-card-category {
+    display:none;
+	flex: 1;
+}
+///placeholder card author
+%box-card-author {
+	flex: 1;
+	text-align: right;
+}
+///placeholder card bottom
+%box-card-bottom {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+///placeholder card img
+%box-card-img {
+	margin: 20px 0;
+	align-self: center;
+	width: 100%;
+	height: auto;
+}
+
+%box-card-button {///placeholder cards button
+    display:none;
+	background-color: map-get($colors, white);
+	color: map-get($colors, dodgerblue);
+	border: none;
+	margin-top: auto;
+	padding: 10px;
+	font-size: 20px;
+}
+
+
+.box-card {
+  position: relative;
+	
+  
+  
+  
+	
+	@for $i from 1 through 50 {/// Loop 50 darken cards
+	  $bg-color: darken(gold, $i);
+  	&:nth-child(#{$i}) {
+  		background: $bg-color;
+  		
+			&::before {
+          content: '#{$bg-color}';
+          position: absolute;
+          color: cyan;
+       }
+  		
+  	}
+  }
+}
+
+
+
+$r : 100;
+$g : 150;
+$b : 200;
+$rgba-opacity:0.5;
+
+/// loop opacity 5 cards
+@for $i from 1 through 5 {  
+  .box-card {
+    &:nth-child(#{$i}) {
+     background: rgba($r, $g, $b, $rgba-opacity);
+     &:before {
+      content: "DavidS"+$i;
+     }
+    }
+  }
+  @if $i % 1 == 0 {  
+   $rgba-opacity: $rgba-opacity + 0.2;
+   $r: $r + 150;
+   $g: $g + 150;
+  }
+}
+
+
+
+

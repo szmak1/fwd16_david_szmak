@@ -1,0 +1,47 @@
+
+
+
+
+.flexwrapper {
+  
+  display:flex;
+     
+    flex-flow:wrap wrap;
+    flex: 1 1 33%;
+    font-size: 30px;
+    
+    color: map-get($colors, dodgerblue);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    padding: 50px;
+     max-width:100%;
+     margin: 0 auto;
+  
+  
+ 
+  
+  
+  
+}
+
+	
+	
+    
+
+
+
+
+
+/*.flexwrapper > section:nth-child(1) { background: #405 }
+.flexwrapper > section:nth-child(2) { background:#444}
+.flexwrapper > section:nth-child(3) { background: #333 }
+*/
+
+
+
+
+
+

@@ -100,7 +100,7 @@ input[type="checkbox"]{
 
 
 
-@include respond-to('small') {
+@include respond-to('large') {
   #nav label {
    display: none;
 }
