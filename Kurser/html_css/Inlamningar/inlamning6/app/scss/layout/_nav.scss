@@ -192,11 +192,11 @@ nav > ul {
             text-transform: uppercase;
             
             flex: 1;
-            color: map-get($colors, white);
+            color: map-get($colors, vit);
             padding: 14px 5px;
             
             &:hover {
-            color: map-get($colors, slategray);
+            color: map-get($colors, metal);
             }
             
         }
