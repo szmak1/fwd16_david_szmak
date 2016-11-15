@@ -84,7 +84,7 @@ $g : 150;
 $b : 200;
 $rgba-opacity:0.5;
 
-/// loop opacity 5 cards
+///@see loop opacity 5 cards
 @for $i from 1 through 5 {  
   .box-card {
     &:nth-child(#{$i}) {
