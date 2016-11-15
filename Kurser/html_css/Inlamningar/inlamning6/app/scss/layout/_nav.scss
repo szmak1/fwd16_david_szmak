@@ -10,7 +10,7 @@ form > div > fieldset > div {
 }
 
 #saveForm {
-  color:white;
+  color: map-get($colors, vit);
   background-color: map-get($colors, menub);
   border-color:map-get($colors, menub);
   width:100%;

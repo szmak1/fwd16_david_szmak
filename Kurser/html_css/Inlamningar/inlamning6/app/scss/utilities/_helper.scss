@@ -7,7 +7,7 @@ max-width: 100%;
 	margin: 0 auto;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	color: map-get($colors, white);
+	color: map-get($colors, vit);
 
 }
 ///placeholder card title
@@ -46,8 +46,8 @@ max-width: 100%;
 
 %box-card-button {///placeholder cards button
     display:none;
-	background-color: map-get($colors, white);
-	color: map-get($colors, dodgerblue);
+	background-color: map-get($colors, vit);
+	color: map-get($colors, menub);
 	border: none;
 	margin-top: auto;
 	padding: 10px;
