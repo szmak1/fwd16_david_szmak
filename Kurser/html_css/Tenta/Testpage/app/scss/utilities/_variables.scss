@@ -10,6 +10,8 @@
 $breakpoints: (
   'small': ( min-width:  50.000em ),
   'medium': ( min-width:  51.000em ),
+  'raresmall': ( min-width:  30.000em ),
+  'rare': ( min-width:  40.000em ),
   'large':  ( min-width: 62.000em ),
 ) !default;
 
@@ -48,3 +50,4 @@ svart: black
 ) !default;
 
 $cardnumber: 50;
+

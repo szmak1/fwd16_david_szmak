@@ -4,7 +4,7 @@
 	@extend %box-card-wrap;
 }
 .box-card {
-	@extend %box-card;
+	
 	background-color: map-get($colors, seagreen);
 	opacity: 0.7;
 	border: 1px solid map-get($colors, vit);
@@ -84,13 +84,40 @@
 
 %box-card {
 	background-color: transparent;
+	
 }
 
 .box-card {
+	@include saab(0.9);
+	background:yellow;
 	@extend %box-card;
+	
 }
 
 
 
+.box-card {
+  /// loop
+  
+  @include each(1) {
+     flex:60%;
+    
+
+     margin: 0 0 30px 0;
+     
+
+    
+      img {
+      object-fit:cover;
+      width:90%;
+      height:150px;
+    
+    }
+    
+  
+  }
+
+
+}
 
 }

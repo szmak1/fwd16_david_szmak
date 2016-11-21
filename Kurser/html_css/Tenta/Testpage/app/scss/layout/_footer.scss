@@ -1,0 +1,39 @@
+.imgfoot {
+    background-image: url("../images/sscs_logo_jolly_roger_outline.png");
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: transparent;
+  
+    cursor: pointer;
+    
+    width: 400px;
+   margin: 0 -600px 0 60px;
+    height: 400px;
+}
+
+
+#pagefooter
+{   /* How to layout the items in the footer */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: #916c55;;
+
+
+    .footcol
+    {   /* How to layout each column inside the footer */
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1;
+        text-align: center;
+        margin: 10px 0;
+        left: 0;
+
+      
+    }
+    @include respond-to('rare') {
+ flex-flow: row wrap;
+    }
+}

@@ -60,32 +60,6 @@ max-width: 100%;
 
 
 
-/// Changes the opacity on all the cards
-/// @param $opacity - requested opacity
-@mixin saab($opacity)
-{
-    
-   
-    
-       
-          
-            /// Loop 50 darken cards
-				@for $i from 1 through 50 {
-	  $bg-color: darken(white, $i);
-	  /// Sets opacity on current card
-  	&:nth-child(#{$i}) {
-  		background: $bg-color;
-  		opacity: $opacity;
-			&::before {
-          content: '#{$bg-color}';
-          position: absolute;
-          color: cyan;
-       }
-  		
-  	}
-  }
-        
-    
-}
+
 
 

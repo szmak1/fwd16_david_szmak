@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  background-image: url("../images/South-Africa-Safari.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: dosis;
+}
+
+h4 {
+  color: map-get($colors, dodgerblue);
+  
+}
+
+footer {
+  background-image: url("../images/icefooter.jpeg");
+}
+
+$gold: gold,
+
