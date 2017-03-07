@@ -1,0 +1,4 @@
+<?pvp
+$saab = new $car();
+
+?>
