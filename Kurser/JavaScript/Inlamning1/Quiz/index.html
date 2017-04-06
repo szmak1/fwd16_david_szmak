@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>QUIZ</title>
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body style="overflow: hidden;" onload="start()">
+
+	<div id="question"></div>
+	<div id="answers">
+		<label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">Radio1</label>
+        <br>
+		<label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">Radio2</label>
+		<br>
+    </div>
+    <div id="results">
+    </div>
+    <div id="timerContainer"><div id="timer"></div></div>
+    <div id="buttons">
+		<a class="disabled" id="next" onclick="next()">Next</a>
+		<a id="repeat" onclick="start()">Repeat</a>
+    </div>
+    
+	<audio preload="auto" id="end">
+		<source src="aircraft011.mp3" type="audio/mp3" />
+		
+	</audio>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="questions.js"></script>
+</body>
+
+</html>

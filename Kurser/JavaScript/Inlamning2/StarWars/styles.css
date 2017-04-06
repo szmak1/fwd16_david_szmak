@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin|Roboto');
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	display: block;
+	margin: 0.5em auto;
+	text-align: center;
+}
+
+.wrapper .hidden {
+	display: none;
+}
+
+  .searchInput {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    margin: 20px auto;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    position: relative;  
+
+    &:focus {
+      border-bottom: 2px solid black;
+    }
+  }
+
+.wrapper > div {
+	background: rgba(0, 0, 0, .6);
+	display: inline-block;
+	position: relative;
+	margin: 2em;
+	padding: 1em;
+	font-weight: 500;
+	color: white;
+	font-size: 1.25em;
+	cursor: pointer;
+	vertical-align: middle;
+	transition: all 0.25s;
+	border: 2px solid #b0b0b0;
+	height: 380px;
+	border-radius: 4%;
+	color: white;
+}
+
+.wrapper > div:nth-of-type(1n) {
+	background-image: url("img/Luke-Skywalker-02-icon.png");
+	background-repeat: no-repeat;
+}
+
+.wrapper > div:nth-of-type(2n) {
+	background-image: url("img/C3PO-icon.png");
+	background-repeat: no-repeat;
+}
+
+.wrapper > div:nth-of-type(3n) {
+	background-image: url("img/r2-d2.png");
+	background-repeat: no-repeat;
+}
+
+.wrapper > div:nth-of-type(4n) {
+	background-image: url("img/Darth_Vader.png");
+	background-repeat: no-repeat;
+}
+
+.wrapper > div:nth-of-type(5n) {
+	background-image: url("img/leila.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.wrapper > div:nth-of-type(6n) {
+	background-image: url("img/Owen_Lars.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+}
+
+.wrapper > div:nth-of-type(7n) {
+	background-image: url("img/larsgirl.jpg");
+	background-repeat: no-repeat;
+	background-size: 70%;
+}
+
+.wrapper > div:nth-of-type(8n) {
+	background-image: url("img/r5-d4.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+
+.wrapper > div:nth-of-type(9n) {
+	background-image: url("img/Biggs.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: top center;
+}
+
+.wrapper > div:nth-of-type(10n) {
+	background-size: 120%;
+	background-image: url("img/obi.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.wrapper > div .name {
+	width: 100%;
+	position: absolute;
+	top: -10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s;
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+.wrapper > div .hiddenContent {
+	
+	opacity: 0;
+	visibility: hidden;
+	top: -10%;
+	left: 50%;
+	transition: all 0.5s;
+}
+
+.wrapper > div:hover {
+	/*box-shadow: 0px 0px 15px #676767;*/
+}
+
+.wrapper > div:hover .name {
+	color: yellow;  
+	transform: translate(-50%, -80%);
+}
+
+.wrapper > div:hover .hiddenContent {
+	opacity: 1;
+	visibility: visible;
+}
+
+.hiddenContent {
+	width: 200px;
+	height: 100px;
+	padding: 250px 20px 20px 20px;
+	font-family: 'Pangolin', sans-serif;
+}
+
+
+/* Background */
+
+.myUnsplash {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	z-index: -100;
+}
+
+.myUnsplash img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+.audioPlay {
+	margin: auto;
+	padding: 5px 30px 30px 30px;
+	text-align: right;
+	align-items: center;
+	color: yellow;
+}
+
+h1 {
+	background: rgba(0,0,0,.8);
+	padding: 20px 0;
+	font-family: 'Pangolin';
+	font-size: 2.5em;
+	margin: auto;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Pangolin';
+	font-size: 1.5em;
+	margin: auto;
+	color: yellow;
+	text-align: right;
+	padding-right: 40px;
+	
+}
+
+.hidden-player {
+	display: none;
+}
