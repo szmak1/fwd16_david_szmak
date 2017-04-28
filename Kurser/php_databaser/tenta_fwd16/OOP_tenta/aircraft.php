@@ -5,20 +5,21 @@ error_reporting(-1);
 		
             /*Konstanter och statiska  egenskaper, Konstanter måste sättas ett värde,
              som sen inte går att ändra på.*/ 
-                const INFO = "WARNING!!! Boogie 9 oclock, Angels 5<br><br>";
+                const INFO = "Refueling charte<br><br>";
                 
              /* Statiska egenskaper går att ända men delas av alla instanser medans
              en variabel är unik för alla instanser av klassen*/
-                static public $stat = "Go Juice, thanks Texaco<br><br>";
+                static public $stat = "WARNING!!! Boogie 9 oclock, Angels 5<br><br>";
 
 
                 /* Properties  */  
                 
                 //protected: enbart dem ärvda klasserna kan ärva den variabel och komma åt den
-		protected $speed;
+		protected $aircraftDesignation;
+                protected $speed;
                 protected $range;
                 protected $payload;
-                protected $aircraftDesignation;
+                
                 
                 //här lägger vi in alla atributen från aircraft
                 public function __construct($aircraftDesignation, $speed, $range, $payload ) {

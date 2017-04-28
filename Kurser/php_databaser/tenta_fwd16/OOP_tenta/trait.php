@@ -2,6 +2,6 @@
 // trai t 
 trait tr_texaco {
     public function texaco(){
-        echo "Refueling charter ";
+        echo "Go Juice, thanks Texaco ";
     }
 } 
